@@ -15,11 +15,15 @@ df = pd.DataFrame({
     "salary": ["5000", "N/A", "?", "7000", "not reported"],
     "city": ["Riyadh", "Jeddah", "unknown", "Dammam", "Riyadh"]
 })
+""" task 1 """
 
 miising = ["unknown", "N/A", "NA", "?" , "not reported"]
+
+""" task 2 """
+
 df.replace(miising, np.nan, inplace=True)
 df
 
 df.isna().mean()
-
+""" task 3 """
 """salary because its numbers and the model will not be able to calculate within the best accuracy cuz there isnt that much of data"""
